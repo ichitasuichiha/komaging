@@ -4,7 +4,7 @@
 //
 
 section#info {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
@@ -48,9 +48,16 @@ section#info {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    min-height: 100%;
+    height: auto;
     z-index: 10;
     padding: 0 15px;
+    background-color: $satori-color;
+    opacity: .9;
+
+    @media #{$small-and-up} {
+      height: 100%;
+    }
 
     .content__close {
       text-align: right;
@@ -62,9 +69,14 @@ section#info {
     }
 
     .content__work {
+      font-size: $font-root-mobile-size - .2;
       text-align: right;
       color: $primary-color;
-      padding: 15px;
+      padding: 10px;
+
+      @media #{$small-and-up} {
+        font-size: $font-root-size - .2;
+      }
 
       h2 {
         font-size: 2rem;
@@ -76,12 +88,17 @@ section#info {
 
         .work__image {
           display: inline-block;
-          width: 148px;
-          height: 148px;
+          width: 120px;
+          height: 120px;
           margin-left: 15px;
           background-size: cover;
           border-radius: 50%;
           border: 2px solid $primary-color;
+
+          @media #{$small-and-up} {
+            width: 148px;
+            height: 148px;
+          }
 
           &.work__image--1 {
             background-image: url('../images/1.png');

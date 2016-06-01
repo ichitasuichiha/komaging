@@ -4,7 +4,7 @@
 //
 
 section#credit {
-  position: fixed;
+  position: absolute;
   top: 0;
   right: 0;
   width: 100%;
@@ -48,9 +48,16 @@ section#credit {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    min-height: 100%;
+    height: auto;
     z-index: 10;
     padding: 0 15px;
+    background-color: $koishi-color;
+    opacity: .9;
+
+    @media #{$small-and-up} {
+      height: 100%;
+    }
 
     .content__close {
       font-size: 2rem;
@@ -61,8 +68,13 @@ section#credit {
     }
 
     .content__author {
+      font-size: $font-root-mobile-size - .2;
       color: $primary-color;
-      padding: 15px;
+      padding: 10px;
+
+      @media #{$small-and-up} {
+        font-size: $font-root-size - .2;
+      }
 
       h2 {
         font-size: 2rem;
@@ -71,8 +83,8 @@ section#credit {
 
       .author__image {
         display: inline-block;
-        width: 123px;
-        height: 123px;
+        width: 120px;
+        height: 120px;
         margin-right: 15px;
         background-size: cover;
         border-radius: 50%;
@@ -95,16 +107,5 @@ section#credit {
         }
       }
     }
-  }
-
-  .credit__bg {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: $koishi-color;
-    opacity: .9;
-    z-index: 1;
   }
 }

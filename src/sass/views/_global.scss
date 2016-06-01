@@ -17,11 +17,11 @@ html {
 }
 
 body {
-  font-size: $font-root-size;
+  font-size: $font-root-mobile-size;
   height: 100%;
 
   @media #{$small-and-up} {
-    font-size: $font-root-mobile-size;
+    font-size: $font-root-size;
   }
 }
 

@@ -36,7 +36,6 @@ section#credit
           span.link--twitter
             a(href='https://twitter.com/polyxx')
               | twitter
-  div.credit__bg
 </template>
 
 <script>

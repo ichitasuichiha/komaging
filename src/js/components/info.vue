@@ -20,7 +20,6 @@ section#info
           | 500yen
         p.detail__space
           | 古-04 いちたすいちは
-  div.info__bg
 </template>
 
 <script>
