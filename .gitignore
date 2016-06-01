@@ -16,6 +16,7 @@ node_modules/
 
 # Dist files.
 dist/*
+.publish/
 !dist/.keep
 
 # Logs
