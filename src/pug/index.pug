@@ -1,0 +1,34 @@
+extends layouts/_layout.pug
+block title
+  title komazing | いちたすいちは
+block prepend body
+  main
+    section#content
+      router-view
+
+      section.content__router
+        div.router__wrapper
+          a(v-link="{ path: '/info' }")
+            div.router__link.router__link--info
+              p
+                | information
+          a(v-link="{ path: '/credit' }")
+            div.router__link.router__link--credit
+              p
+                | credit
+    section#bglayer(data-content-render="/")
+      div.bglayer__text
+        figure#js-svg-logo.text--logo
+        figure.text--lt
+          img(src='images/lt.svg')
+        figure.text--cb
+          img(src='images/cb.svg')
+        figure.text--rb
+          img(src='images/rb.svg')
+      div.bglayer__star
+        div.star.star--1
+        div.star.star--2
+        div.star.star--3
+        div.star.star--4
+      div.bglayer__bg
+        img.bg__image(src='images/bg.png')

@@ -1,0 +1,33 @@
+//
+// Variable Classes
+// --------------------------------------------
+//
+
+// Colors
+$primary-color: #fff;
+$koishi-color: #39c1b5;
+$satori-color: #ff78a2;
+
+// Fonts
+$font-default-size: 62.5%;
+$font-root-mobile-size: 1.2rem;
+$font-root-size: 1.4rem;
+$font-line-height: 1.5;
+$font-family: "メイリオ", "Meiryo", verdana, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+$font-google-family: "Pacifico", cursive;
+
+// Media Query Ranges
+$screen-small-down:  480px;
+$screen-small-up:    481px;
+
+$small-and-up:  "only screen and (min-width: #{$screen-small-up})";
+
+// Images
+$star-1-image: "../images/star-r.png";
+$star-2-image: "../images/star-b.png";
+$star-3-image: "../images/star-y.png";
+$star-4-image: "../images/star-g.png";
+$main-bg-image: "../images/bg.png";
+$main-bg-width: 550px;
+$main-bg-height: 770px;
+$main-bg-ratio: 140%;

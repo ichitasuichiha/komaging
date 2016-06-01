@@ -1,0 +1,10 @@
+// Import Sanitize
+@import "sanitize.css";
+
+// Import Utility Classes
+@import "utils/variables";
+@import "utils/mixins";
+
+// Import View Styles
+@import "views/global";
+@import "views/index";
