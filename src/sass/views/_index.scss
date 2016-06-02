@@ -15,7 +15,7 @@ main {
 
   @media #{$small-and-up} {
     min-height: $main-bg-height;
-    overflow-x: auto;
+    overflow-x: scroll;
   }
 
   section#content {
