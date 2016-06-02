@@ -18,8 +18,10 @@ section#info
           | A5&nbsp;/&nbsp;16p&nbsp;/&nbsp;FullColor
         p.detail__price
           | 500yen
+        p.detail__event
+          | 古明地こんぷれっくす みっつめ。
         p.detail__space
-          | 古-04 いちたすいちは
+          | 古-04 「いちたすいちは」
 </template>
 
 <script>
